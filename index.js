@@ -18,6 +18,12 @@ app.get('/', (req, res) => {
     res.render('index.ejs', {title: title} )
 })
 
+//ruta admin
+app.get('/admin', (req, res) => {
+    var title = app.get('appName')+" | Admin"
+    res.render('admin.ejs', {title: title} )
+})
+
 //ruta académico
 app.get('/academico', (req, res) => {
     var title = app.get('appName')+" | Académico"
